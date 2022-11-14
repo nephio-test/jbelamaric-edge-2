@@ -23,10 +23,26 @@ info:
 status:
   conditions:
   - type: nf.nephio.org.UPFDeployment.upf-deployment.Injected
-    status: "False"
-    reason: ResourceNotFound
-    message: upfdeployments.nf.nephio.org "edge-2" not found
+    status: "True"
+    reason: ResourceInjected
+    message: injected from FiveGCoreTopology "fivegcoretopology-sample" UPF name "agg-layer"
   - type: infra.nephio.org.ClusterContext.cluster-context.Injected
     status: "True"
     reason: ResourceInjectedFromCluster
     message: resource with apiVersion "infra.nephio.org/v1alpha1", kind "ClusterContext", name "edge-2", and namespace "default" injected to the package revision from the cluster
+  - type: ipam.nephio.org.IPAMAllocation.upf-edge-2-n6.default.Injected
+    status: "False"
+    reason: PendingInjection
+    message: Awaiting IP allocation and injection
+  - type: ipam.nephio.org.IPAMAllocation.upf-edge-2-n3.default.Injected
+    status: "False"
+    reason: PendingInjection
+    message: Awaiting IP allocation and injection
+  - type: ipam.nephio.org.IPAMAllocation.upf-edge-2-n4.default.Injected
+    status: "False"
+    reason: PendingInjection
+    message: Awaiting IP allocation and injection
+  - type: ipam.nephio.org.IPAMAllocation.upf-edge-2-internet.default.Injected
+    status: "False"
+    reason: PendingInjection
+    message: Awaiting IP allocation and injection
