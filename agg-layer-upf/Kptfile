@@ -23,9 +23,9 @@ info:
 status:
   conditions:
   - type: nf.nephio.org.UPFDeployment.upf-deployment.Injected
-    status: "True"
-    reason: ResourceInjected
-    message: injected from FiveGCoreTopology "fivegcoretopology-sample" UPF name "agg-layer"
+    status: "False"
+    reason: ResourceNotFound
+    message: upfdeployments.nf.nephio.org "edge-2" not found
   - type: infra.nephio.org.ClusterContext.cluster-context.Injected
     status: "True"
     reason: ResourceInjectedFromCluster
