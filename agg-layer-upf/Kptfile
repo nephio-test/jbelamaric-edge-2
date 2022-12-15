@@ -23,9 +23,9 @@ info:
 status:
   conditions:
   - type: nf.nephio.org.UPFDeployment.upf-deployment.Injected
-    status: "False"
-    reason: ResourceNotFound
-    message: upfdeployments.nf.nephio.org "edge-2" not found
+    status: "True"
+    reason: ResourceInjected
+    message: injected from FiveGCoreTopology "fivegcoretopology-sample" UPF name "agg-layer"
   - type: infra.nephio.org.ClusterContext.cluster-context.Injected
     status: "True"
     reason: ResourceInjectedFromCluster
@@ -48,16 +48,16 @@ status:
     message: Injected IP allocation
   - type: ipam.nephio.org.IPAMAllocation.upf-edge-2-n3.upf.Injected
     status: "False"
-    reason: ErrorDuringInjection
-    message: 'cannot allocate ip: rpc error: code = Unknown desc = no available routes based on the label selector: nephio.org/network-instance in (sample-vpc),nephio.org/network-name in (sample-n3-net),nephio.org/prefix-kind in (network)'
+    reason: PendingInjection
+    message: Awaiting IP allocation and injection
   - type: ipam.nephio.org.IPAMAllocation.upf-edge-2-n4.upf.Injected
     status: "False"
-    reason: ErrorDuringInjection
-    message: 'cannot allocate ip: rpc error: code = Unknown desc = no available routes based on the label selector: nephio.org/network-instance in (sample-vpc),nephio.org/network-name in (sample-n3-net),nephio.org/prefix-kind in (network)'
+    reason: PendingInjection
+    message: Awaiting IP allocation and injection
   - type: ipam.nephio.org.IPAMAllocation.upf-edge-2-n6.upf.Injected
     status: "False"
-    reason: ErrorDuringInjection
-    message: 'cannot allocate ip: rpc error: code = Unknown desc = no available routes based on the label selector: nephio.org/network-instance in (sample-vpc),nephio.org/network-name in (sample-n3-net),nephio.org/prefix-kind in (network)'
+    reason: PendingInjection
+    message: Awaiting IP allocation and injection
   - type: ipam.nephio.org.IPAMAllocation.upf-edge-2-internet.upf.Injected
     status: "True"
     reason: ResourceInjected
